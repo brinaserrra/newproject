@@ -1,0 +1,216 @@
+html{
+	scroll-behavior: smooth;
+}
+body{
+	/*width: 1200px; */
+	font-family: verdana;
+	background-color: #3a3d47;
+	display: flex;
+	flex-direction: column;
+	
+}
+
+:root{
+	--principal-blue: #1551a1;
+	--sec-blue: #062348;
+}
+
+@media (max-width: 960px) {
+    li{
+    	display: none;
+    }
+    .logo{
+    	width: 100%;
+
+    }
+    .navbar-header{
+    	justify-content: center;
+    	align-items: center;
+    }
+}
+
+@media (max-width: 800px) {
+	.servicios{
+		 flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 600px) {
+	footer{
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+
+
+
+.navbar-header{
+	background-color: var(--principal-blue);
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+	
+	
+}
+.logo{
+	width: 25%;
+
+	
+}
+
+ul,li{
+	color: white;	
+	list-style: none;
+
+}
+ul{
+	margin: 0px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 75%;
+    
+  
+
+}
+li{
+	padding:10px;
+	border: solid white;
+	margin: 10px;
+	border-radius: 3px;
+    flex-basis: auto;
+
+
+   
+      
+
+}
+li:hover{
+	background-color: white;
+	color: black;
+}
+li{
+	transition: background-color 0.4s linear 0.4s;
+	transition: color 0.2s linear 0.1s;
+}
+a{
+	text-decoration: none;
+
+}
+#logo-img{
+	padding: 20px;
+}
+
+#mecanico-img{
+   height: 100%;
+   width: 100%;
+}
+
+.title{
+	color: #ff7600;
+	font-size: 25px;
+	margin: 0px;
+	text-align: center;
+}
+
+.info-container{
+	background-color: white;
+	margin: 0px;
+	
+	padding: 5px;
+	
+}
+
+
+.num-serv{
+	background-color: var(--principal-blue);
+	color: white;
+	margin: 0px;
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+.servicio{
+	width: 100%;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+
+h4{
+	margin: 20px;
+}
+
+.servicios{
+	display: flex;
+	flex-direction: row;
+
+}
+
+.serv-container{
+	display: flex;
+	flex-direction: column;	
+	justify-content: center;
+	
+	align-items: center;
+	margin: 5px;
+} 
+
+button{
+	color: white;
+	background-color: var(--principal-blue);
+	border: none;
+	border-radius: 5px;
+	width: 100px;
+	height: 40px;
+	font-size: 20px;
+
+}
+
+button:hover{
+	
+	background-color: var(--sec-blue);	
+	cursor: pointer;
+
+}
+button{
+	transition: background-color 0.2s linear 0.2s;
+
+}
+
+p{
+	margin:10px;
+}
+
+
+
+
+footer{
+	background-color: var(--sec-blue);
+	color: white; 
+	display: flex;
+	flex-direction: row;
+	padding: 20px;
+}
+.about-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;	
+  padding: 10px;
+  width: 50%;
+}
+
+.social-container{
+     display: flex;
+     flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+	font-size: 20px;
+}
